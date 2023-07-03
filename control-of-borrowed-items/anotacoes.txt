@@ -1,0 +1,31 @@
+Controle pessoal de empréstimo
+Problema: Ter um controle pessoal de itens que foram emprestados e que peguei emprestado.
+
+Solução: Sistema de empréstimo, onde será possível cadastrar, visualizar e marcar como devolvido.
+
+Funcionalidade:
+Cadastro de empréstimo - ok
+Atributos:
+id
+Descrição do item
+Tipo do empréstimo:  emprestar ou emprestado
+Data prevista de devolução
+Data de devolução
+Nome da pessoa
+Data do empréstimo
+status (pendente, devolvido)
+Tela inicial:
+	Irá apresentar todos os empréstimos pendentes e dar opção para Marcar como devolvido.
+
+====================
+
+Adicionar filtros
+
+Adicionar status a tabela borrow
+
+Registrar emprestimo
+Exibir emprestimos (emprestados, emprestando, devolução esse mes, essa semana, hoje e atrasados
+
+Concluir emprestimo (devolução ou desistencia por quebra ou perda)
+Avisar no dia da devolução (e-mail ou sms)
+
