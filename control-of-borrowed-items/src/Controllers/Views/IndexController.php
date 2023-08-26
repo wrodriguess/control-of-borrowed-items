@@ -1,6 +1,6 @@
 <?php
 
-namespace Will\Borrowed\Controllers;
+namespace Will\Borrowed\Controllers\Views;
 
 use Will\Borrowed\Dao\BorrowDao;
 
@@ -17,5 +17,19 @@ class IndexController
         $twig = new \Twig\Environment($loader, ['debug' => true]);
         
         echo $template = $twig->load('../templates/base.html.twig');
+    }
+
+    public function renderView()
+    {
+        $loader = new \Twig\Loader\FilesystemLoader('views');
+        $twig = new \Twig\Environment($loader, [
+            'cache' => '/path/to/compilation_cache',
+        ]);
+
+        $data = [
+            'name' => 'William'
+        ];
+
+        return $twig->render('hello.html.twig', $data);
     }
 }

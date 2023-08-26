@@ -29,3 +29,13 @@ Exibir emprestimos (emprestados, emprestando, devolução esse mes, essa semana,
 Concluir emprestimo (devolução ou desistencia por quebra ou perda)
 Avisar no dia da devolução (e-mail ou sms)
 
+==========================
+
+05/07/2023
+
+Implementar classe abstrata para os controllers extende-las -> Criar dentro da view controller
+
+Deixar as views todas com twig
+
+https://www.schoolofnet.com/curso/php/linguagem-php/php-e-dependency-inje/
+

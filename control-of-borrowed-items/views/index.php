@@ -1,6 +1,6 @@
 <?php
 
-use Will\Borrowed\Controllers\IndexController;
+use Will\Borrowed\Controllers\Views\IndexController;
 
 $indexController = new IndexController();
 $borrowList = $indexController->index();
