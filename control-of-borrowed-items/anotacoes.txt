@@ -39,3 +39,62 @@ Deixar as views todas com twig
 
 https://www.schoolofnet.com/curso/php/linguagem-php/php-e-dependency-inje/
 
+=================================
+
+28/08/2023
+
+index.php
+#=#=#=#=#=#=
+	Recebe as requisições e aponta para o controller e método correspondente
+
+
+======================================================================================================
+
+
+Controllers/Views/BorrowController.php
+#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=
+	Controller do Borrow
+
+Controllers/Views/IndexController.php
+#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=
+	Controller generico que exibe hello.html.twig
+
+
+======================================================================================================
+
+
+Model/Item.php
+#=#=#=#=#=#=#=#=#=
+	Classe item, contendo atributos, getters e setters de item
+
+Model/Borrow.php
+#=#=#=#=#=#=#=#=#=
+	Classe Borrow, contendo atributos, getters e setters de item
+
+Dao/ItemDao.php
+#=#=#=#=#=#=#=#=#=
+	Métodos do objeto Item
+		-> No momento só existe o create
+
+Dao/BorrowDao.php
+#=#=#=#=#=#=#=#=#=#=#=#=
+	Métodos CRUD do objeto Borrow
+
+action/returnedAction.php
+#=#=#=#=#=#=#=#=#=#=#=#=#=#=#=
+	Conecta com o banco de dados e retorna o id, setando o mesmo no atributo returned do objeto 	borrow
+
+
+======================================================================================================
+
+
+views/index.php
+#=#=#=#=#=#=#=#=#=
+	Lista (READ) dos emprestimos
+		-> Em forma de php na view
+
+
+views/create.php
+#=#=#=#=#=#=#=#=#=
+	Formulário (CREATE) dos emprestimos
+		-> Em formato de php na view

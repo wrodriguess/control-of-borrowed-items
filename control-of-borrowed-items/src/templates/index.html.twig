@@ -1,7 +1,26 @@
-{% extends 'base.html.twig' %}
+<a href="create" style="margin-bottom: 20px">
+    <h2>Novo Registro</h2>
+</a>
 
-{% block title %}Hello Twig{% endblock %}
-
-{% block body %}
-    <h1>{{Hello Twig }}</h1>
-{% endblock %}
+<table border="1" width="100%">
+    <tr>
+        <th>ID</th>
+        <th>ITEM ID</th>
+        <th>USER NAME</th>
+        <th>TYPE</th>
+        <th>EXPECTED DATE</th>
+        <th>AÇÕES</th>
+    </tr>
+    {% for item in items %}
+        <tr>
+            <td>{{ item.id }}</td>
+            <td>{{ item.itemDescription}}</td>
+            <td>{{ item.userName }}</td>
+            <td>{{ item.type }}</td>
+            <td>{{ item.expectedDate }}</td>
+            <td>
+                <a href="/control-of-borrowed-items/returnedAction/{{ item.id}} ?>" onclick="return confirm('Deseja marcar o item como devolvido?');">Devolvido</a>
+            </td>
+        </tr>
+    {% endfor %}
+</table>
